@@ -1,4 +1,6 @@
 <?php
+   header("Content-Type: text/plain");
+
    $string = $_GET['text'];
    if (empty($string)) {
        echo("ОшИБКАААА! Нет данных");
