@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.black_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+}
+.rose_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ff00f2;
+}
+
+.small_black_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px;
+}
+.button_middle {
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
+    font-family: 'Montserrat',sans-serif;
+    /* Тут можно поэкспериментировать */
+    padding: 12px 16px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.button_middle.black {
+    background: #000000;
+}
+.big_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.big_rose_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122%;
+    color: #ff00f2;
+}
+
+.subtitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+}
