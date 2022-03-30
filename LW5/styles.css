@@ -3,17 +3,13 @@
 .header{
 
 }
-.logo{
+.header__logo{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
 }
-.rose_text{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
+.header__logo.rose{
     color: #ff00f2;
 }
 
@@ -58,7 +54,7 @@
     flex-grow: 0;
     margin: 0 8px;
 }
-.big_text{
+.h1__text{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -67,12 +63,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.big_rose_text{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 100px;
-    line-height: 122%;
+.h1__text.rose{
     color: #ff00f2;
 }
 
@@ -116,6 +107,11 @@
     line-height: 126.06%;
     color: #000000;
 }
+.abilities__block{
+    background: black;
+    width: 358px;
+    height: 190px
+}
 .abilities__title{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -124,4 +120,33 @@
     line-height: 59px;
     text-align: center;
     color: #000000;
+}
+
+.abilities__text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer{
+    width: 100%;
+    height: 108px;
+    background: black;
+}
+
+.footer__logo{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 122.33%;
+    letter-spacing: -0.045em;
+    color: #FFFFFF;
+}
+
+.footer__logo.rose{
+    color: #ff00f2;
 }
