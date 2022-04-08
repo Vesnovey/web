@@ -1,26 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.header{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.header{
+    display: flex;
+    align-items: center;
 }
 .header__logo{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
+    letter-spacing: -0.045em;
+
 }
 .header__logo.rose{
     color: #ff00f2;
+}
+
+.logo{
+    padding-left: 130px;
+    padding-top: 15px;
+    margin-bottom: 0;
 }
 
 .menu{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
+    list-style: none; /*убираем маркеры списка*/
+    padding-top: 0;
+    margin-bottom: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 890px; /*убираем левый отступ, равный 40px*/
+    display: flex;
 }
-.button_middle {
+.menu-tag{
+    padding-left: 125px;
+}
+.button {
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -29,18 +48,19 @@
     /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
     font-family: 'Montserrat',sans-serif;
     /* Тут можно поэкспериментировать */
-    padding: 18px 34px;
-    border-radius: 3px;
 
     color: #ffffff;
-    margin-top: 30px;
 }
-.button_middle.black {
+.button.header {
     background: #000000;
+    padding: 20px 55px;
+    margin-left: 100px;
+    border-radius: 3px;
+
 }
 .button_text{
-    left: calc(50% - 167px/2);
-    top: calc(50% - 17px/2);
+    /*left: calc(50% - 167px/2);*/
+    /*top: calc(50% - 17px/2);*/
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -54,13 +74,17 @@
     flex-grow: 0;
     margin: 0 8px;
 }
+
+.intro__block{
+    display: flex;
+}
 .h1__text{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 100px;
+    font-size: 117px;
     line-height: 122%;
-    margin-top: 20px;
+    margin-top: 250px;
     margin-bottom: 10px;
 }
 .h1__text.rose{
@@ -73,6 +97,18 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 120%;
+}
+.intro__block{
+    margin-left: 195px;
+}
+.button.intro__block{
+    background: #000000;
+    padding: 20px 70px;
+    margin-left: 100px;
+    border-radius: 3px;
+}
+.intro__picture{
+    margin-left: 100px;
 }
 .benefits__blocks{
     width: 100%;
