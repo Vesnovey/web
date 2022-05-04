@@ -29,6 +29,13 @@ function calc(str) {
 
     if(str.indexOf(regex) === -1) {
         calc(str.indexOf(regex));
+        let op;
+        for(let i=0; i<str.length-1; i++){
+            if(str[i] === '+' || '-' || '*' || '/'){
+                op = str[i];
+                break;
+            }}
+        //тут осталось прочитать до числа и результат отработавшей функции (сложить) с числом после скобок
     }
     let res;
     if(str.indexOf(regex) !== -1) {
@@ -60,8 +67,8 @@ function calc(str) {
             res = nums[1] * nums[2];
         }
 
-        return res;
-    }
 
+    }
+    return res;
 
 }
