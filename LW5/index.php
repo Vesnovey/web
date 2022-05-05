@@ -5,6 +5,7 @@
     <title>Site</title>
     <link rel="stylesheet"
           href="styles.css">
+    <script async src="main.js"></script>
 </head>
 <body>
 
@@ -114,38 +115,39 @@
 
 
 
+    <div class="popup__bg">
+        <div class="popup">
+            <img alt="close" src="images/close.svg" class="close-popup">
+            <img class="form__image" src="images/Welcome.svg" alt="welcome">
+            <p class="form__title">Sign up for a course</p>
+            <form action="contact.php" method="post">
+                <div class="elem-group">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="visitor_name" placeholder="Your name" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="visitor_email" placeholder="Email" required>
+                </div>
+                <div class="elem-group">
+                    <label for="activity-selection"></label>
+                    <select style="opacity: 75%" id="activity-selection" name="activity"  required>
+                        <option value="">Activity</option>
+                        <option value="designer">Designer</option>
+                        <option value="programmer">Programmer</option>
+                        <option value="marketer">Marketer</option>
+                    </select>
+                </div>
 
-    <div class="form">
-        <img class="form__image" src="/images/Welcome.svg" alt="welcome">
-        <p class="form__title">Sign up for a course</p>
-        <form action="contact.php" method="post">
-            <div class="elem-group">
-                <label for="name"></label>
-                <input type="text" id="name" name="visitor_name" placeholder="Your name" pattern=[A-Z\sa-z]{3,20} required>
-            </div>
-            <div class="elem-group">
-                <label for="email"></label>
-                <input type="email" id="email" name="visitor_email" placeholder="Email" required>
-            </div>
-            <div class="elem-group">
-                <label for="activity-selection"></label>
-                <select style="opacity: 75%" id="activity-selection" name="activity"  required>
-                    <option value="">Activity</option>
-                    <option value="designer">Designer</option>
-                    <option value="programmer">Programmer</option>
-                    <option value="marketer">Marketer</option>
-                </select>
-            </div>
+                <div style="display: flex;">
+                    <input class="form__checkbox" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                    <label class="form__checkbox-text" for="subscribeNews">I agree to receive information materials about the start of the course</label>
+                </div>
 
-            <div style="display: flex;">
-                <input class="form__checkbox" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-                <label class="form__checkbox-text" for="subscribeNews">I agree to receive information materials about the start of the course</label>
-            </div>
-
-            <button  class="form__button" type="submit">Sign up for a course</button>
-        </form>
+                <button  class="form__button" type="submit">Sign up for a course</button>
+            </form>
+        </div>
     </div>
-
 
     <footer class="footer">
         <p class="footer__logo">Don't <span class="footer__logo rose">do</span> it</p>
